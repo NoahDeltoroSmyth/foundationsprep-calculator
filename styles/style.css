@@ -9,3 +9,5 @@ main {
     border: 2px black solid;
     padding: 25px;
 }
+
+..class > button:hover {
