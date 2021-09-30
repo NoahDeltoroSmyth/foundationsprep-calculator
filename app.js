@@ -1,4 +1,4 @@
-import { add, sub} from './calculations.js';
+import { add, sub, multi} from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -22,4 +22,16 @@ subButton.addEventListener('click', () => {
     const value2 = Number(subInput2.value);
     const result = sub(value1, value2);
     subOutput.textContent = result;
+});
+
+const multiInput1 = document.getElementById('multi-input-1');
+const multiInput2 = document.getElementById('multi-input-2');
+const multiButton = document.getElementById('multi-button');
+const multiOutput = document.getElementById('multi-output');
+
+multiButton.addEventListener('click', () => {
+    const value1 = Number(multiInput1.value);
+    const value2 = Number(multiInput2.value);
+    const result = multi(value1, value2);
+    multiOutput.textContent = result;
 });
