@@ -1,4 +1,4 @@
-import { add, sub, multi} from './calculations.js';
+import { add, sub, multi, divi} from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -34,4 +34,16 @@ multiButton.addEventListener('click', () => {
     const value2 = Number(multiInput2.value);
     const result = multi(value1, value2);
     multiOutput.textContent = result;
+});
+
+const diviInput1 = document.getElementById('divi-input-1');
+const diviInput2 = document.getElementById('divi-input-2');
+const diviButton = document.getElementById('divi-button');
+const diviOutput = document.getElementById('divi-output');
+
+diviButton.addEventListener('click', () => {
+    const value1 = Number(diviInput1.value);
+    const value2 = Number(diviInput2.value);
+    const result = divi(value1, value2);
+    diviOutput.textContent = result;
 });
